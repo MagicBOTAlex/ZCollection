@@ -11,7 +11,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         node = pkgs.nodejs_22; # or pkgs.nodejs_20
-        packs = [ pkgs.pnpm pkgs.caddy ];
+        packs = [ pkgs.pnpm pkgs.caddy pkgs.gnused ];
 
 
         start = pkgs.writeShellApplication
