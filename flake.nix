@@ -11,17 +11,29 @@
       let
         pkgs = import nixpkgs { inherit system; };
         node = pkgs.nodejs_22; # or pkgs.nodejs_20
-        packs = [ pkgs.pnpm ];
+        packs = [ pkgs.pnpm pkgs.caddy ];
 
 
-        start = pkgs.writeShellApplication {
-          name = "start";
+        start = pkgs.writeShellApplication
+          {
+            name = "start";
+            runtimeInputs = [ node ] ++ packs;
+            text = ''
+              set -euo pipefail
+              export npm_config_cache="$PWD/.npm-cache"
+              pnpm install -f
+              pnpm run dev -- "$@"
+            '';
+          };
+        host = pkgs.writeShellApplication {
+          name = "host";
           runtimeInputs = [ node ] ++ packs;
           text = ''
             set -euo pipefail
             export npm_config_cache="$PWD/.npm-cache"
             pnpm install -f
-            pnpm run dev -- "$@"
+            pnpm run build
+            caddy file-server --root build --listen :4173
           '';
         };
 
@@ -29,6 +41,7 @@
       {
         devShells.default = pkgs.mkShell { buildInputs = [ node ] ++ packs; shellHook = ''export npm_config_cache="$PWD/.npm-cache"''; };
         apps.default = { type = "app"; program = "${start}/bin/start"; };
+        apps.host = { type = "app"; program = "${host}/bin/host"; };
       });
 }
 
