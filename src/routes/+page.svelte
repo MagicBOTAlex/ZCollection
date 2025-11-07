@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="mx-auto mt-20 w-full max-w-screen-md rounded-lg border border-green-500 bg-gray-800 p-6 text-gray-100 shadow-lg"
+	class="mx-auto w-full max-w-screen-md bg-gray-800 pt-20 text-gray-100 shadow-lg md:rounded-lg md:border md:border-green-500 md:p-6"
 >
 	<h1 class="-mb-2 text-center text-2xl font-bold">Welcome to my collection of data and sources</h1>
 	<h2 class="-mt-6 mt-1 mb-6 text-center text-sm font-light text-gray-400">BOTAlex</h2>

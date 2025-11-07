@@ -10,9 +10,9 @@
 </svelte:head>
 
 <!-- Top Bar -->
-<div
-	class="cozette-force fixed top-0 left-0 z-10 w-full bg-gray-800 py-2 text-center text-green-400 shadow-md"
->
-	Filler text
-</div>
+<!-- <div -->
+<!-- 	class="cozette-force top-0 left-0 z-10 w-full bg-gray-800 py-2 text-center text-green-400 shadow-md" -->
+<!-- > -->
+<!-- 	Filler text -->
+<!-- </div> -->
 {@render children()}
