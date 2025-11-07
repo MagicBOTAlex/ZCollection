@@ -72,7 +72,7 @@
 		<div class="translate-3">Good code snippets</div>
 		<ol>
 			{#each { length: 300 } as _, i}
-				<li><a href="/code/{i}">Code block {i}</a></li>
+				<li><a href="/code/{i}">Code examples from refrenced scientific articles: {i}</a></li>
 			{/each}
 		</ol>
 	</div>
