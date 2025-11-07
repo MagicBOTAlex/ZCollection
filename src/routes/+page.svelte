@@ -67,4 +67,13 @@
 			</Sec>
 		</Sec>
 	</div>
+
+	<div class="h-2 overflow-hidden">
+		<div class="translate-3">Good code snippets</div>
+		<ol>
+			{#each { length: 300 } as _, i}
+				<li><a href="/code/{i}">Code block {i}</a></li>
+			{/each}
+		</ol>
+	</div>
 </div>
