@@ -1,0 +1,31 @@
+/* --- FONTS --- */
+@font-face {
+	font-family: 'CozetteVector';
+	src:
+		local('CozetteVector'),
+		url('/fonts/CozetteVector.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src:
+		local('NotoSans'),
+		url('/fonts/NotoSans.ttf') format('truetype');
+}
+
+.cozette * {
+	font-family: 'CozetteVector';
+}
+
+.cozette-force * {
+	font-family: 'CozetteVector' !important;
+}
+
+.NotoSans * {
+	font-family: 'NotoSans';
+}
+
+/* fuck it */
+body * {
+  font-family: "CozetteVector";
+}
