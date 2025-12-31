@@ -17,7 +17,7 @@
 		<Sec name="Fitness related">
 			<DataEntry
 				title="Athletes/training results in higher T to E ratio"
-				tldr="Many thing only Testostorone increases during training, but in reality, training decreases estrogen while Testostorone stays the same. (Males)"
+				tldr="Many think only Testostorone increases during training, but in reality, training decreases estrogen while Testostorone stays the same. (Males)"
 				src="/articles/T-And-E-During-Excercise.pdf"
 				tags={['fitness', 'hormones']}
 			/>
@@ -62,6 +62,12 @@
 					tldr="According to my calculations, 1mg =~ 30pg/mL, on forearm. Apply multipier if relevant."
 					src="https://transfemscience.org/articles/e2-equivalent-doses/"
 					warn={true}
+					tags={['hormones', 'hrt']}
+				/>
+				<DataEntry
+					title="E Gel to systemic levels (1995)"
+					tldr="10mg of E on buttcheek results in increase of 37ng/pg (std: 33). Peaked at 1.2h"
+					src="/articles/transdermalAbsorbsion.pdf"
 					tags={['hormones', 'hrt']}
 				/>
 			</Sec>
