@@ -66,7 +66,7 @@
 				/>
 				<DataEntry
 					title="E Gel to systemic levels (1995)"
-					tldr="10mg of E on buttcheek results in increase of 37ng/pg (std: 33). Peaked at 1.2h"
+					tldr="10mg of E on buttcheek results in increase of 37ng/mL (std: 33). Peaked at 1.2h"
 					src="/articles/transdermalAbsorbsion.pdf"
 					tags={['hormones', 'hrt']}
 				/>
