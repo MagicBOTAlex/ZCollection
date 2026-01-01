@@ -27,6 +27,12 @@
 				src="/articles/alcoholAfterExcercise.pdf"
 				tags={['fitness']}
 			/>
+			<DataEntry
+				title="Slow vs fast reps"
+				tldr="No evidence for slow or to failure reps increasing hypertrophy. Just lift some things"
+				src="/articles/fastVsSlow.pdf"
+				tags={['fitness']}
+			/>
 		</Sec>
 		<Sec name="Hormones">
 			<Sec name="Hair loss">
