@@ -27,7 +27,7 @@
 		{/if}
 	</div>
 
-	<div class="whitespace-pre-line opacity-65">{tldr}</div>
+	<div class="whitespace-pre-line opacity-65">{@html tldr}</div>
 
 	<slot></slot>
 	<div class="py-1">

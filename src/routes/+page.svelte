@@ -29,7 +29,7 @@
 			/>
 			<DataEntry
 				title="Slow vs fast reps"
-				tldr="No evidence for slow or to failure reps increasing hypertrophy. Just lift some things"
+				tldr="No evidence for slow or to failure reps increasing hypertrophy. Just lift some things. (NOTE: <a class='text-blue-400' href='/articles/The_Effect_of_Weight_Training_Using_Fast_and_Slow_.pdf' target='_blank'>This pdf</a> counters this point, where slow = more hypertrophy)"
 				src="/articles/fastVsSlow.pdf"
 				tags={['fitness']}
 			/>
